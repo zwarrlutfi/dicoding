@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rexus Gamepad</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="img/apple.jpg" alt="">
+        </div>
+        <div class="burger" id="burger">
+            <i class="fas fa-bars fa-lg"></i>
+        </div>
+        <nav class="nav-list hidden">
+            <ul id="nav-list" class="hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#iphone 15 pro max">Iphone 15 Pro Max</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="artikel" id="produk">
+            <h2>15 Pro Max</h2>
+            <p>
+                iPhone 15 Pro Max. Lahir dari titanium dan dilengkapi chip A17 Pro terobosan,
+                tombol Tindakan yang dapat disesuaikan, dan sistem kamera iPhone paling andal yang pernah ada.
+            </p>
+        </article>
+
+        <aside class="side"  id="beranda">
+            <div class="content-image">
+                <img src="img/all.png" alt="" id="img-utama">
+            </div>
+            <div class="image-pick">
+                <img src="img/white.png" alt="" id="img-white">
+                <img src="img/black.png" alt="" id="img-black">
+                <img src="img/blue.png" alt="" id="img-blue">
+                <img src="img/natural.png" alt="" id="img-natural">
+            </div>
+        </aside>
+
+        <div id="support">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById("burger");
+        const menuList = document.getElementById("nav-list");
+        menuIcon.addEventListener("click", () =>{
+            menuList.classList.toggle("hidden");
+        })
+
+        document.getElementById("img-white").addEventListener("click", function() {
+        document.getElementById("img-utama").src = "img/white.png";
+        });
+        document.getElementById("img-black").addEventListener("click", function() {
+        document.getElementById("img-utama").src = "img/black.png";
+        });
+        document.getElementById("img-blue").addEventListener("click", function() {
+        document.getElementById("img-utama").src = "img/blue.png";
+        });
+        document.getElementById("img-natural").addEventListener("click", function() {
+        document.getElementById("img-utama").src = "img/natural.png";
+        });
+    </script>
+
+</body>
+
+</html>
